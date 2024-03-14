@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll('.animations');
-const covers = document.querySelector('.covers');
+const covers = document.querySelector('.content');
 
 
 function checkIfCoversInView() {
@@ -16,7 +16,7 @@ function checkIfCoversInView() {
     if (coversInView) {
         if (window.innerWidth < 1440) {
             elements.forEach((element) => {
-                console.log("on");
+               
             element.classList.add('animations-mobile-tablet');
       
             
@@ -24,7 +24,7 @@ function checkIfCoversInView() {
         } 
     } else {
         elements.forEach((element) => {
-            console.log("off");
+            
         element.classList.remove('animations-mobile-tablet');
   
         
