@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 .header {
   padding: 20px 0;
 }
@@ -18,4 +22,266 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
+}
+
+.marg {
+  margin-top: 32px;
+}
+
+.ac .ac-trigger.test::after {
+  content: 'V';
+  text-align: center;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.ac.is-active>.ac-header .ac-trigger.test::after {
+  content: '^';
+}
+
+.position {
+  position: relative;
+  overflow: hidden;
+}
+
+/* стрілки та пагінація, булети
+/* https://www.youtube.com/watch?v=ddbxsrGPRY0&t=447s */
+/* //////////////////////////////////////////// */
+.orders-form {
+  display: flex;
+  margin-top: 60px;
+}
+
+.modal-form-input {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  padding-top: 16px 0;
+  width: 390px;
+  margin-bottom: 20px;
+  margin-right: 32px;
+  margin-top: 50px;
+  height: 47px;
+  border-radius: 15px;
+  border: 1px solid blue;
+  background-color: transparent;
+  color: black;
+  transition: border-color 250ms linear;
+}
+
+.modal-form-input:focus {
+  outline: transparent;
+  outline-offset: 4px;
+}
+
+.modal-form-input::placeholder {
+  color: rgba(7, 7, 7, 0.5);
+}
+
+.modal-form-message {
+  width: 390px;
+  border-radius: 15px;
+  border: 1px solid blue;
+  background-color: transparent;
+  padding-top: 16px 0;
+  margin-top: 50px;
+  height: 47px;
+  resize: none;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: black;
+  transition: border-color 250ms linear;
+}
+
+.modal-form-message:focus {
+  border-color: blue;
+  outline: transparent;
+  outline-offset: 4px;
+}
+
+.modal-form-message::placeholder {
+  color: rgba(18, 15, 15, 0.5);
+}
+
+.orders-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: black;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid blue;
+  width: 150px;
+  height: 150px;
+  min-height: 49px;
+  margin-left: 40px;
+  transition: border-color 250ms linear;
+}
+
+.orders-button:hover,
+.orders-button:focus {
+  border-color: #ecd979;
+  outline: transparent;
+  outline-offset: 4px;
+}
+
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================ */
+/* //////////////////////////desktop///////////////////// */
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.content {
+  position: relative;
+  margin-top: 50px;
+  height: 960px;
+}
+
+.marquee {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+  font-family: 'Pridi', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: uppercase;
+  height: 960px;
+  width: 1440px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(../img/photos/Rectangle\ 13.jpg);
+}
+
+
+.marquee__line {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 544px;
+
+  overflow: hidden;
+  transition: transform 250ms linear;
+  white-space: nowrap;
+}
+
+.marquee__line:hover {
+  transform: scale(1.03);
+}
+
+.animations {
+  animation-name: marqueeLine;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+  transition: transform 5s linear;
+}
+
+.animations:hover {
+  transform: translateX(-30%);
+}
+
+.absolute {
+  position: absolute;
+  top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.one-line {
+  margin-left: 274px;
+}
+
+.two-line {
+  position: relative;
+  top: -67px;
+  left: -125px;
+}
+
+.three-line {
+  position: relative;
+  top: -16px;
+  left: 29px;
+}
+
+.four-line {
+  position: relative;
+  top: -120px;
+  left: -382px;
+}
+
+
+
+.gallery-items {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* /////////////////////////////////////////// */
+
+.test-div {
+  position: relative;
+  top: -146px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 40px;
+  transform: rotate(16deg);
+}
+
+.test-div-two {
+  display: flex;
+  gap: 30px;
+}
+
+.relet {
+  position: relative;
+  left: -289px;
+}
+
+/* /////////////////////////////////////*/
+.accord-marg {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* ///////////////////////////////// */
+.no-active {
+  height: 200px;
+  background-color: lightblue;
+  color: blue;
+}
+
+.active {
+  transform: translateX(-30%);
 }

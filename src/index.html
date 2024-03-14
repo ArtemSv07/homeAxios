@@ -1,24 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load ="partials/header.html" />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <a href="./covers.html">covers</a>
+  <div class="container">
+    <!-- ============================================================================ -->
+    <section class="marg">
+      <div class="swiper-container position">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <img src="./img/photos/1.jpg" alt="1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/photos/2.jpg" alt="2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/photos/3.jpg" alt="3" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar">scrollbar</div> -->
+      </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ================================================================================= -->
+    <!-- <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script> -->
+    <!-- ========================================================================= -->
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <form class="orders-form">
+      <input class="modal-form-input" type="email" name="user-email" placeholder="clients@gmail.com" required />
+      <textarea class="modal-form-message" name="user-comment" placeholder="comments" required></textarea>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+      <button class="orders-button" type="submit">Send</button>
+    </form>
+
+    <!-- ================================================== -->
+    <section class="covers">
+      <div class="content">
+        <div class="marquee">
+          <ul class="test-div">
+            <li class="test-div-two animations">
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-1.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-2.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-1.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-2.jpg" alt="1" /></a>
+            </li>
+
+            <li class="test-div-two animations relet">
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-3.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-4.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-5.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-3.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-4.jpg" alt="1" /></a>
+            </li>
+
+            <li class="test-div-two animations">
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-6.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-7.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-8.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-6.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__lineithub.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-7.jpg" alt="1" /></a>
+            </li>
+
+            <li class="test-div-two animations relet">
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-9.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-10.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-9.jpg" alt="1" /></a>
+              <a target="_blank" class="marquee__line"
+                href="https://jackavryashnik.github.io/ukrainian-traditional-clothes/"><img class="gallery-items"
+                  src="./img/photos/сайти/Rectangle-10.jpg" alt="1" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ===============================FAQ======================== -->
+    <section class="accord-marg">
+      <ul class="accordion-container">
+        <li class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">What programming languages ​​are most often used in your
+              project?</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">In the field of web development, there are various technologies and programming
+              languages. Typically, this includes a
+              combination of frontend (client side) and backend (server side) languages.</p>
+          </div>
+        </li>
+
+        <li class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+
+        <li class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+
+        <li class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+
+        <li class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+
+        <li class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+    <!-- ====================================================================== -->
+    <div id="targetElement" class="no-active">
+      Scroll down to see the effect
+    </div>
+    <div id="targetElement" class="no-active">
+      Scroll down to see the effect
+    </div>
+    <div id="targetElement" class="no-active">
+      Scroll down to see the effect
+    </div>
+    <div id="targetElement" class="no-active">
+      Scroll down to see the effect
+    </div>
+    <div id="targetElement" class="no-active">
+      Scroll down to see the effect
+    </div>
+    <div id="targetElement" class="no-active">
+      Scroll down to see the effect
+    </div>
+    <div id="targetElement" class="no-active">
+      Scroll down to see the effect
+    </div>
+    <div id="targetElement" class="no-active">
+      Scroll down to see the effect
+    </div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>
